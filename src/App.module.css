@@ -1,0 +1,130 @@
+.newTask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.writeTask {
+  display: flex;
+  flex-direction: column;
+  margin-top: -1.75rem;
+
+  width: 39.8rem;
+  height: 3.375rem;
+
+  border-radius: 8px;
+  background: var(--gray-500);
+  color: var(--gray-300);
+  outline: none;
+
+  padding: 16px;
+  border: 1px solid var(--gray-700);
+}
+
+.writeTask:focus {
+  color: var(--gray-100);
+}
+
+.addTask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  width: 5.625rem;
+  height: 3.25rem;
+  margin-top: -1.75rem;
+
+  background: var(--blue-dark);
+  color: var(--gray-100);
+
+  border: 0;
+  border-radius: 8px;
+
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.addTask > span {
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+.addTask svg {
+  font-size: 1.25rem;
+}
+
+.addTask:hover {
+  background: var(--blue);
+}
+
+.tasks {
+  width: 736px;
+  height: 287px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 4rem auto;
+  /* border: 2px solid blue; */
+}
+
+.tasks > header {
+  width: 100%;
+  display: flex;
+  align-self: flex-start;
+  justify-content: space-between;
+
+  /* border: 2px solid red; */
+  margin-bottom: 1.5rem;
+}
+
+.createdTasks,
+.completedTasks {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  padding: 0.25rem;
+}
+
+.createdTasks > p {
+  color: var(--blue);
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.createdTasks > span {
+  padding: 0.25rem;
+
+  background: var(--gray-400);
+  color: var(--gray-200);
+  border-radius: 999px;
+
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.completedTasks > p {
+  color: var(--purple);
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.completedTasks > span {
+  padding: 0.25rem;
+
+  background: var(--gray-400);
+  color: var(--gray-200);
+  border-radius: 999px;
+
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.listOfTasks {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  display: block;
+}

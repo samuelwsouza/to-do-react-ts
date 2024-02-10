@@ -1,0 +1,40 @@
+.checkboxcontainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.roundcheckbox {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid var(--blue);
+  margin-right: 10px;
+  cursor: pointer;
+  appearance: none;
+
+  transition: background-color 0.2s;
+}
+
+.roundcheckbox:checked {
+  background-color: var(--purple-dark);
+}
+
+.checkLabel {
+  cursor: pointer;
+}
+
+.checkLabel img {
+  position: absolute;
+  margin-top: -0.16rem;
+  margin-left: -1.58rem;
+}
+
+.roundcheckbox:hover {
+  background: rgba(94, 96, 206, 0.3);
+}
+
+.roundcheckbox:checked:hover {
+  background: var(--purple);
+}
